@@ -1,0 +1,303 @@
+.product-image {
+  float: left;
+  width: 20%;
+}
+.order-product-image {
+  float: left;
+  width: 50%;
+}
+.product-details {
+  float: left;
+  width: 37%;
+}
+
+.product-price {
+  float: left;
+  width: 13%;position: relative;
+  text-align: left;
+
+}
+
+.product-quantity {
+  float: left;
+  width: 30%;
+  text-align: initial;
+}
+
+.product-removal {
+  float: left;
+  width: 9%;
+}
+
+.product-line-price {
+  float: left;
+  width: 12%;
+  text-align: right;
+}
+
+/* This is used as the traditional .clearfix class */
+.group:before, .shopping-cart:before, .column-labels:before, .product:before, .totals-item:before,
+.group:after,
+.shopping-cart:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+  content: '';
+  display: table;
+}
+
+.group:after, .shopping-cart:after, .column-labels:after, .product:after, .totals-item:after {
+  clear: both;
+}
+
+.group, .shopping-cart, .column-labels, .product, .totals-item {
+  zoom: 1;
+}
+/*
+.shopping-cart {
+  margin-top: -45px;
+}
+*/
+.product .product-quantity  , .product .product-details, .product .product-image, .product .product-price {
+	min-height: 142px;
+    display: flex;flex-wrap: wrap;
+    align-items: center;
+}
+.shopping-cart .button-gray{margin-top: 20px;}
+/* Column headers */
+.column-labels {
+  background: #f7f7f8;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 2px 2px 0px 0px;
+}
+.column-labels label {
+    padding: 15px 20px;
+    border-bottom: 1px solid #F2F2F2;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #00274E;
+}
+.column-labels label{
+	border-top:1px solid #F2F2F2;
+}
+.column-labels label:first-child{
+	border-left:1px solid #F2F2F2;
+}
+.column-labels label:last-child{
+	border-right:1px solid #F2F2F2;
+}
+
+/*
+.column-labels .product-image, .column-labels .product-details, .column-labels .product-removal {
+  text-indent: -9999px;
+}
+*/
+
+/* Product entries */
+.product:first-child{border-top:0;}
+.product {margin-bottom: 10px;padding: 20px 15px;border: 1px solid rgba(0,0,0,.125);background: #f7f7f8;position: relative;}
+.product .product-image {
+  text-align: center;
+}
+.product .product-details .product-description {
+  margin: 5px 20px 5px 0;
+  line-height: 1.4em;
+}
+.product .product-quantity input {
+  width: 40px;
+}
+.cart-label-left {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #00274E;
+}
+.cart-label-right {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #536372;
+}
+.product-quantity .quantitybox2{display: inline-flex;}
+.quantitybox2 {
+    clear: initial;
+    margin: 0px;
+    display: inline-block;
+    overflow: hidden;
+    height: 46px;
+    width: 32%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #626abb38;
+    position: relative;
+}
+.quantitybox2 .quantity2 {
+    padding: 6px 2px;
+    float: left;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+    height: 38px;
+    border-radius: 0;
+    position: inherit;
+    opacity: 1;
+    cursor: pointer;
+    background: #FFF;
+}
+.quantitybox input[type='number'] {
+    -moz-appearance: textfield;
+}
+.product .product-quantity input {
+    width: 40px;
+}
+.quantity2 .qty {
+    width: 48px;
+    border: 0;
+    height: 38px;
+    text-align: center;
+}
+.value-button2.increase {
+    top: 0;
+    padding-top: 4px;
+}
+.value-button2 {
+    font-size: 18px;
+    margin: 0 -1px;
+    height: 23px;
+    width: 36px;
+    line-height: 100%;
+    text-align: center;
+    float: left;
+    color: #575757;
+    background: #FFF;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.value-button2.decrease {
+    bottom: 0;
+    top: inherit;
+    padding-bottom: 4px;
+}
+/* Totals section */
+.totals .totals-item {
+  float: right;
+  clear: both;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.totals .totals-item label {
+  float: left;
+  clear: both;
+  width: 79%;
+  text-align: right;
+}
+.totals .totals-item .totals-value {
+  float: right;
+  width: 21%;
+  text-align: right;
+}
+
+
+/* Make adjustments for tablet */
+
+@media screen and (max-width: 1499px){
+	.product-image{padding-right: 15px;}
+}
+
+@media screen and (max-width: 767px) {
+	.shopping-cart .product{padding: 50px 15px 10px;}
+	.product .product-quantity, .product .product-details, .product .product-image, .product .product-price{
+		min-height: auto;padding: 0 0 15px;
+	}
+	.product .product-quantity, .product .product-price{width: 100%;}
+  .shopping-cart {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+
+  .column-labels {
+    display: none;
+  }
+
+  .product-image {
+    float: right;
+    width: auto;
+  }
+  .product-image img {
+    margin: 0 0 10px 10px;width: 125px;
+  }
+
+  .product-details {
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  .product-price {
+    clear: both;
+    width: 70px;
+  }
+
+  .product-quantity {
+    width: 100px;
+  }
+
+  .product-removal {
+    width: auto;
+  }
+
+  .product-line-price {
+    float: right;
+    width: 70px;
+  }
+	.quantity .qty{height: 100%;}
+}
+
+@media screen and (max-width: 480px){
+	.product-details, .product-image{width: 100%;}
+	.shopping-cart .product {padding: 16px 15px 10px;}
+}
+
+/* Make more adjustments for phone */
+@media screen and (max-width: 350px) {
+  .product-removal {
+    float: right;
+  }
+
+  .product-line-price {
+    float: right;
+    clear: left;
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .product .product-line-price:before {
+    content: 'Item Total: $';
+  }
+
+  .totals .totals-item label {
+    width: 60%;
+  }
+  .totals .totals-item .totals-value {
+    width: 40%;
+  }
+}

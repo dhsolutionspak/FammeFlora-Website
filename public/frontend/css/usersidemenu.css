@@ -1,0 +1,85 @@
+.wrapper .sidebar{
+    background:#f7f7f8;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+}
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.wrapper .sidebar .profile span {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #00274E;
+}
+.wrapper .sidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+    color: #04243D;
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+    color: #04243D;
+    font-size: 14px;
+}
+.wrapper .sidebar ul li a{
+    padding: 10px 10px;
+    font-size: 18px;
+    color: #00274E;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.wrapper .sidebar ul li a .icon{
+    color: rgb(100, 100, 100);
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #04243D;
+    background:white;
+    font-size: 18px;
+    font-weight: 500;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #626ABB;
+}
+.wrapper .sidebar ul li a:hover ,
+.wrapper .sidebar ul li a.active{
+    background: #FFFFFF;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+.img-round {
+  height: 40px;
+  width: 40px;
+  background: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

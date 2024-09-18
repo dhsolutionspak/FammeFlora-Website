@@ -1,0 +1,77 @@
+.smk_accordion {position: relative;list-style: none;}
+/**
+ * --------------------------------------------------------------
+ * Section
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in {position: relative;z-index: 1;overflow: hidden;border-bottom:1px solid rgb(18 21 51 / 10%);}
+/*.smk_accordion .accordion_in:not(:last-child){margin-bottom: 10px;}*/
+/**
+ * --------------------------------------------------------------
+ * Head
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in .acc_head h3{	font-size: 16px;font-weight: normal;line-height: 100%;color: #121533;cursor: pointer;padding: 18px 0px;margin: 0;}
+.smk_accordion .accordion_in .acc_head:before{content: "";position: absolute;top: 23px;right: 0;background: url(../images/select-arrow.png) no-repeat;width: 10px;height: 6px;line-height: 100%;color: #1f313b;transition: all 0.3s linear;-webkit-transition: all 0.3s linear;-o-transition: all 0.3s linear;-ms-transition: all 0.3s linear;-moz-transition: all 0.3s linear; }
+.smk_accordion .accordion_in .acc_head{position: relative;}
+.smk_accordion .accordion_in.acc_active .acc_head:before{
+	transform: rotate(-90deg);
+}
+
+.smk_accordion .accordion_in > .acc_content{padding: 10px 0 22px;}
+
+/**
+ * --------------------------------------------------------------
+ * Content
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in .acc_content h1:first-of-type,
+.smk_accordion .accordion_in .acc_content h2:first-of-type,
+.smk_accordion .accordion_in .acc_content h3:first-of-type,
+.smk_accordion .accordion_in .acc_content h4:first-of-type,
+.smk_accordion .accordion_in .acc_content h5:first-of-type,
+.smk_accordion .accordion_in .acc_content h6:first-of-type {
+	margin-top: 5px;
+}
+
+/**
+ * --------------------------------------------------------------
+ * General
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in:first-of-type,
+.smk_accordion .accordion_in:first-of-type .acc_head {
+	/* border-radius: 3px 3px 0 0;*/
+}
+.smk_accordion .accordion_in.acc_active > .acc_content {display: block;}
+.brochure_accordion.smk_accordion .accordion_in.acc_active > .acc_head:after {content: '';border-bottom: 1px solid #ccc;position: absolute;bottom: 10px;left: 0;right: 0;}
+.brochure_accordion.smk_accordion .accordion_in.acc_active > .acc_head:before {content: '';position: absolute;bottom: 0px;left: 25px;right: 0;width: 0;height: 0;border-left: 10px solid transparent;border-right: 10px solid transparent;border-top: 10px solid #d6d6d9;}
+.smk_accordion.acc_with_icon .accordion_in .acc_head span.ciricon > img{height: 31px;margin-right: 16px;}
+.smk_accordion .accordion_in.acc_active .acc_head.active {border-bottom: 0;}
+.smk_accordion .accordion_in.acc_active .acc_head.active a, .smk_accordion .accordion_in.acc_active .acc_head a {background: linear-gradient( -100deg, rgb(208,25,0) 0%, rgb(255,149,0) 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent; }
+
+
+
+
+@media screen and (max-width:1199px){
+	.smk_accordion .accordion_in .acc_head h3{font-size: 16px;}
+	.residential_accordion.smk_accordion .accordion_in .acc_content{padding: 10px 0 5px;}
+	.smk_accordion .accordion_in:not(:last-child) {margin-bottom: 15px;}
+}
+@media screen and (max-width:991px) {
+	.smk_accordion .accordion_in .acc_head h3 {padding:12px 60px 12px 0;letter-spacing: normal;}
+	.smk_accordion .accordion_in .acc_head {font-size: 16px;}
+	.smk_accordion .accordion_in .acc_head:before{top:14px;}
+}
+@media screen and (max-width:767px) {
+	
+	
+}
+@media screen and (max-width:575px) {
+	.smk_accordion .accordion_in .acc_head h3{font-size: 16px;padding: 12px 50px 12px 0;}
+	.smk_accordion .accordion_in .acc_head:before {top: 16px;}
+	
+}
+@media screen and (max-width:370px){
+
+}
